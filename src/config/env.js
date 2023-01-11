@@ -1,0 +1,16 @@
+import { DEV_URL, DEV_SHIPMENT, DEV_UIPARS, DEV_CATEGORY } from "@env";
+import { PROD_URL, PROD_SHIPMENT, PROD_UIPARS, PROD_CATEGORY } from "@env";
+const devENV = {
+  environment: DEV_URL,
+  HOST_SHIPMENT: DEV_SHIPMENT,
+  HOST_CATEGORY: DEV_CATEGORY,
+  HOST_UIPARS: DEV_UIPARS,
+};
+const prodENV = {
+  environment: PROD_URL,
+  HOST_SHIPMENT: PROD_SHIPMENT,
+  HOST_CATEGORY: PROD_CATEGORY,
+  HOST_UIPARS: PROD_UIPARS,
+};
+
+export default __DEV__ ? devENV : prodENV;

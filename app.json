@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "XlogMobie",
-    "slug": "XlogMobie",
-    "version": "1.0.0",
+    "name": "NUMEROLOGIES",
+    "slug": "intepost",
+    "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/phucKhangLogo.png",
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#0D0D0D"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -18,16 +18,23 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nguyendaiphuc.phuckhangNumerologies"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+        "foregroundImage": "./assets/phucKhangLogo.png",
+        "backgroundColor": "#0D0D0D"
+      },
+      "package": "com.nguyendaiphuc.phuckhangNumerologies"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "44ceea6f-2fd2-45be-9fdc-bce972d52007"
+      }
     }
   }
 }
