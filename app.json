@@ -1,8 +1,8 @@
 {
   "expo": {
     "name": "NUMEROLOGIES",
-    "slug": "intepost",
-    "version": "1.0.1",
+    "slug": "numerologies",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/phucKhangLogo.png",
     "userInterfaceStyle": "automatic",
@@ -33,8 +33,23 @@
     },
     "extra": {
       "eas": {
-        "projectId": "44ceea6f-2fd2-45be-9fdc-bce972d52007"
+        "projectId": "c720bd05-5f0a-4fcb-99a8-301f5377a51d"
       }
-    }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 31,
+            "targetSdkVersion": 31,
+            "buildToolsVersion": "31.0.0"
+          },
+          "ios": {
+            "deploymentTarget": "13.0"
+          }
+        }
+      ]
+    ]
   }
 }

@@ -221,6 +221,7 @@ const SignupScreen = ({ navigation }) => {
               <DateTimePickerModal
                 isVisible={isDatePickerVisible}
                 // style={{backgroundColor:"red", width:"100%", height:"20%"}}
+                value={state.data.DoB ? state.data.DoB : new Date()}
                 mode="date"
                 onConfirm={handleConfirm}
                 onCancel={hideDatePicker}
